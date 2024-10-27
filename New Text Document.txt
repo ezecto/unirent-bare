@@ -1,0 +1,21 @@
+ // // upload images to S3 bucket
+  // const fileContent = Buffer.from(
+  //   req.body.images.replace(/^data:image\/\w+;base64,/, ""),
+  //   "base64",
+  // );
+  // const putObjectParams = {
+  //   Bucket: bucketName + "/public/" + uuid,
+  //   Key: uuid + "_0.jpg",
+  //   Body: fileContent,
+  //   ContentEncoding: "base64",
+  //   ContentType: "image/jpeg",
+  // };
+  // console.log(putObjectParams);
+  // try {
+  //   const response = await s3Client.send(new PutObjectCommand(putObjectParams));
+  //   console.log(response);
+  // } catch (err) {
+  //   console.error(err);
+  // }
+
+Cannot do serverless image upload with api gateway and lambda function because base64 image payload is too big

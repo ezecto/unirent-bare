@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3unirentstorage820c3fa6",
+  "bucketName": "unirent-storage-820c3fa6",
+  "policyUUID": "b336f328",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "DELETE",
+    "READ"
+  ]
+}

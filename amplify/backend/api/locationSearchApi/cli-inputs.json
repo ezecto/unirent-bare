@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/location/search": {
+      "name": "/location/search",
+      "lambdaFunction": "locationSearchApi",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

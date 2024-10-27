@@ -1,0 +1,26 @@
+version: 1.0
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install --quiet --global expo-cli
+        - >
+          if [ -f yarn.lock ]; then
+            yarn
+          elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+    build:
+      commands:
+        - echo "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY" >> .env
+        - npx expo export --platform web
+  artifacts:
+    baseDirectory: dist
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
+      - $(npm root --global)/**/*

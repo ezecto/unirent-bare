@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/recommendation": {
+      "name": "/recommendation",
+      "lambdaFunction": "recommendationHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/accommodations": {
+      "name": "/accommodations",
+      "lambdaFunction": "accommodationFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

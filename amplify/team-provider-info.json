@@ -1,0 +1,48 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-unirent-staging-195410-authRole",
+      "UnauthRoleArn": "arn:aws:iam::378006208565:role/amplify-unirent-staging-195410-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::378006208565:role/amplify-unirent-staging-195410-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-unirent-staging-195410-deployment",
+      "UnauthRoleName": "amplify-unirent-staging-195410-unauthRole",
+      "StackName": "amplify-unirent-staging-195410",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:378006208565:stack/amplify-unirent-staging-195410/2a24b1f0-c397-11ee-bed0-0a2539ae81db",
+      "AmplifyAppId": "d3kjwk6i5to4jv"
+    },
+    "categories": {
+      "api": {
+        "unirent": {},
+        "accommodationApi": {},
+        "googleMapsApi": {},
+        "locationSearchApi": {}
+      },
+      "auth": {
+        "unirenta9aa32e0": {}
+      },
+      "function": {
+        "graphQlLambdaAuthorizerdd8bb286": {},
+        "accommodationFunction": {
+          "deploymentBucketName": "amplify-unirent-staging-195410-deployment",
+          "s3Key": "amplify-builds/accommodationFunction-6e7a546d5562654e6c53-build.zip"
+        },
+        "recommendationHandler": {
+          "deploymentBucketName": "amplify-unirent-staging-195410-deployment",
+          "s3Key": "amplify-builds/recommendationHandler-32664c564d5a74436f6b-build.zip"
+        },
+        "geocodingHandler": {
+          "deploymentBucketName": "amplify-unirent-staging-195410-deployment",
+          "s3Key": "amplify-builds/geocodingHandler-75696a48457143557734-build.zip"
+        },
+        "locationSearchApi": {
+          "deploymentBucketName": "amplify-unirent-staging-195410-deployment",
+          "s3Key": "amplify-builds/locationSearchApi-4b5633544e4938785253-build.zip"
+        }
+      },
+      "storage": {
+        "s3unirentstorage820c3fa6": {}
+      }
+    }
+  }
+}
